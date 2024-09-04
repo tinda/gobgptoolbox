@@ -1,4 +1,4 @@
-module github.com/kaimao-cheng/gobgptoolbox
+module github.com/tinda/gobgptoolbox
 
 go 1.15
 
