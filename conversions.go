@@ -11,7 +11,7 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/any"
 	api "github.com/osrg/gobgp/v3/api"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	"github.com/osrg/gobgp/v3/pkg/packet/bgp"
 	"github.com/sbezverk/gobmp/pkg/prefixsid"
 	"github.com/sbezverk/gobmp/pkg/srv6"
 )
