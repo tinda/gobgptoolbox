@@ -199,8 +199,8 @@ func MarshalSRv6SubSubTLVs(stlvs map[uint8][]srv6.SubSubTLV) map[uint32]*api.SRv
 					continue
 				}
 				o := &api.SRv6StructureSubSubTLV{
-					LocalBlockLength:    uint32(sstlv.LocalBlockLength),
-					LocalNodeLength:     uint32(sstlv.LocalNodeLength),
+					LocatorBlockLength:  uint32(sstlv.LocalBlockLength),
+					LocatorNodeLength:   uint32(sstlv.LocalNodeLength),
 					FunctionLength:      uint32(sstlv.FunctionLength),
 					ArgumentLength:      uint32(sstlv.ArgumentLength),
 					TranspositionLength: uint32(sstlv.TranspositionLength),
@@ -305,8 +305,8 @@ func UnmarshalSRv6SubSubTLVs(stlvs map[uint32]*api.SRv6TLV) (map[uint8][]srv6.Su
 				if !ok {
 					continue
 				}
-				o.LocalBlockLength = uint8(v.LocalBlockLength)
-				o.LocalNodeLength = uint8(v.LocalNodeLength)
+				o.LocalBlockLength = uint8(v.LocatorBlockLength)
+				o.LocalNodeLength = uint8(v.LocatorNodeLength)
 				o.FunctionLength = uint8(v.FunctionLength)
 				o.ArgumentLength = uint8(v.ArgumentLength)
 				o.TranspositionLength = uint8(v.TranspositionLength)
